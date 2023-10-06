@@ -370,18 +370,17 @@ export default {
       return this.schemaMeta.title + org;
     },
     generateDatasetDescription() {
-      var today = new Date().toISOString().slice(0, 10);
       var desc = "";
       if (this.schemaMeta.schema_url.includes("schema.data.gouv.fr")) {
         desc =
-          'Ce jeu de données répond au spécifications du schéma "' +
+          'Ce jeu de données répond aux spécifications du schéma "' +
           this.schemaMeta.title +
           '" disponible sur le site [schema.data.gouv.fr](https://schema.data.gouv.fr/' +
           this.schemaName +
           ")";
       } else {
         desc =
-          'Ce jeu de données répond au spécifications du schéma "' +
+          'Ce jeu de données répond aux spécifications du schéma "' +
           this.schemaMeta.title +
           '" (spécification disponible [ici](' +
           this.schemaMeta.schema_url +
